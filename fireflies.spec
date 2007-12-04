@@ -13,7 +13,7 @@ Group: Graphical desktop/Other
 BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: libmesaglut-devel
 BuildRequires: SDL-devel
-BuildRequires: XFree86-devel
+BuildRequires: X11-devel
 Requires: xscreensaver >= 4.12
 
 %description
