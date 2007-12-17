@@ -10,7 +10,6 @@ Source0: http://somewhere.fscked.org/fireflies/%{name}-%{version}.tar.bz2
 URL: http://somewhere.fscked.org/fireflies/
 License: GPL
 Group: Graphical desktop/Other
-BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: libmesaglut-devel
 BuildRequires: SDL-devel
 BuildRequires: X11-devel
