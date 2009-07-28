@@ -1,6 +1,6 @@
 %define name fireflies
 %define version 2.07
-%define release %mkrel 7
+%define release %mkrel 8
 
 Summary: Colourful OpenGL screensaver
 Name: %{name}
@@ -8,6 +8,8 @@ Version: %{version}
 Release: %{release}
 Source0: http://somewhere.fscked.org/fireflies/%{name}-%{version}.tar.bz2
 Patch: fireflies-2.07-gcc4.3.patch
+Patch1: libgfx-fltk-header.patch
+Patch2: fireflies-2.07-missing-header.patch
 URL: http://somewhere.fscked.org/fireflies/
 License: GPL
 Group: Graphical desktop/Other
@@ -27,6 +29,8 @@ leaving colorful translucent trails that get blown around by the wind.
 %setup -q
 tar xzf libgfx*
 %patch -p1
+%patch1 -p0
+%patch2 -p1
 
 %build
 cd libgfx && ./configure && cd src && make
