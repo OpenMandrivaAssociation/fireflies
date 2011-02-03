@@ -1,6 +1,6 @@
 %define name fireflies
 %define version 2.07
-%define release %mkrel 8
+%define release %mkrel 9
 
 Summary: Colourful OpenGL screensaver
 Name: %{name}
@@ -14,9 +14,9 @@ URL: http://somewhere.fscked.org/fireflies/
 License: GPL
 Group: Graphical desktop/Other
 BuildRoot: %{_tmppath}/%{name}-buildroot
-BuildRequires: libmesaglut-devel
+BuildRequires: libmesaglu-devel
 BuildRequires: SDL-devel
-BuildRequires: X11-devel
+BuildRequires: libx11-devel
 Requires: xscreensaver >= 4.12
 
 %description
@@ -33,10 +33,10 @@ tar xzf libgfx*
 %patch2 -p1
 
 %build
-cd libgfx && ./configure && cd src && make
+cd libgfx && %configure2_5x && cd src && %make
 cd ../..
-./configure --prefix=%_prefix --libdir=%_libdir
-%make CXX="g++ $LDFLAGS -DHAVE_GLX" 
+%configure2_5x
+%make
 
 %install
 rm -rf $RPM_BUILD_ROOT
