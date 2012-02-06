@@ -1,6 +1,6 @@
 %define name fireflies
 %define version 2.07
-%define release %mkrel 9
+%define release %mkrel 10
 
 Summary: Colourful OpenGL screensaver
 Name: %{name}
