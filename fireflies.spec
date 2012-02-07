@@ -36,7 +36,7 @@ tar xzf libgfx*
 cd libgfx && %configure2_5x && cd src && %make
 cd ../..
 %configure2_5x
-%make
+%make OPT_LIBS=-lX11
 
 %install
 rm -rf $RPM_BUILD_ROOT
