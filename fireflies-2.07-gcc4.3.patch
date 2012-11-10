@@ -1,0 +1,11 @@
+diff -p -up fireflies-2.07/libgfx/src/raster.cxx~ fireflies-2.07/libgfx/src/raster.cxx
+--- fireflies-2.07/libgfx/src/raster.cxx~	2002-01-27 05:01:35.000000000 +0100
++++ fireflies-2.07/libgfx/src/raster.cxx	2008-07-27 22:57:22.000000000 +0200
+@@ -10,6 +10,7 @@
+ #include <gfx/raster.h>
+ 
+ #include <string>
++#include <cstring>
+ #include <cctype>
+ 
+ ByteRaster::ByteRaster(const ByteRaster &img)

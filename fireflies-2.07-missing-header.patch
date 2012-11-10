@@ -1,0 +1,12 @@
+diff -p -up fireflies-2.07/src/vroot.h~ fireflies-2.07/src/vroot.h
+--- fireflies-2.07/src/vroot.h~	2005-12-09 04:07:30.000000000 +0100
++++ fireflies-2.07/src/vroot.h	2009-07-28 10:14:10.000000000 +0200
+@@ -82,6 +82,8 @@ static const char vroot_rcsid[] =
+ #include <X11/Xatom.h>
+ #include <X11/Xlib.h>
+ 
++#include <stdio.h>
++
+ static Window
+ #ifdef __STDC__ /* ANSIfication added by jwz, to avoid superfluous warnings. */
+ VirtualRootWindowOfScreen(Screen *screen)
