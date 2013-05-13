@@ -16,7 +16,7 @@ Group: Graphical desktop/Other
 BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: libmesaglu-devel
 BuildRequires: SDL-devel
-BuildRequires: libx11-devel
+BuildRequires: pkgconfig(x11)
 Requires: xscreensaver >= 4.12
 
 %description
