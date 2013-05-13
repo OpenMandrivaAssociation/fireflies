@@ -1,6 +1,6 @@
 %define name fireflies
 %define version 2.07
-%define release %mkrel 10
+%define release  11
 
 Summary: Colourful OpenGL screensaver
 Name: %{name}
@@ -13,7 +13,6 @@ Patch2: fireflies-2.07-missing-header.patch
 URL: http://somewhere.fscked.org/fireflies/
 License: GPL
 Group: Graphical desktop/Other
-BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: libmesaglu-devel
 BuildRequires: SDL-devel
 BuildRequires: pkgconfig(x11)
