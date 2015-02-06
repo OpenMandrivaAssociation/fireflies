@@ -4,7 +4,7 @@
 Summary:	Colourful OpenGL screensaver
 Name:		fireflies
 Version:	2.07
-Release:	12
+Release:	13
 License:	GPLv2+
 Group:		Graphical desktop/Other
 Url:		http://somewhere.fscked.org/fireflies/
