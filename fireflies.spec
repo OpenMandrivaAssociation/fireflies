@@ -7,7 +7,7 @@ Version:	2.07
 Release:	13
 License:	GPLv2+
 Group:		Graphical desktop/Other
-Url:		http://somewhere.fscked.org/fireflies/
+Url:		https://somewhere.fscked.org/fireflies/
 Source0:	http://somewhere.fscked.org/fireflies/%{name}-%{version}.tar.bz2
 Patch0:		fireflies-2.07-gcc4.3.patch
 Patch1:		libgfx-fltk-header.patch
