@@ -14,6 +14,11 @@ Patch1:		libgfx-fltk-header.patch
 Patch2:		fireflies-2.07-missing-header.patch
 Patch3:		fireflies-2.07-libgfx-libpng15.patch
 Patch4:		fireflies-2.07-libgfx-libpng16.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(gl)
 BuildRequires:	pkgconfig(glu)
 BuildRequires:	pkgconfig(libpng)
